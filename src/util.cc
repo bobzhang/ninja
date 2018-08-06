@@ -78,7 +78,7 @@ bool ShouldBeColorFul(bool terminal){
   switch(GetAnsiType()){
     case COLOR_NO: return false;
     case COLOR_FORCE: return true;
-    case COLOR_UNKOWN: return terminal;
+    default: return terminal;
   }
 }
 
